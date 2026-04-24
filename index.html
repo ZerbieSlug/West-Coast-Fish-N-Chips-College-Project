@@ -38,7 +38,8 @@
 From our fried fish to our delectable clam chowder, you can have yourself a taste of the sea right here in the valley.
 </p>
 </section>
-<main>
+<!-- Main, with flex control -->
+<main class="d-inline-flex flex-row mb-3">
 <!-- Hours -->
 <aside>
 <h3>Find us at</h3>
@@ -51,7 +52,9 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
 </ul>
 </aside>
 <!-- Food Preview Carousel -->
-<div id="carouselExampleCaptions" class="carousel slide w-25">
+<section>
+<!-- BUG: Carousel changes in size when sliding to next option, will be fixed via CSS later -->
+<div id="carouselExampleCaptions" class="carousel slide carousel-fade">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -60,7 +63,7 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
   <div class="carousel-inner">
     <div class="carousel-item active">
 	<!-- Food Thumbnail 1 -->
-      <img src="img/debug-slug-wide.jpg" class="d-block w-100" alt="...">
+      <img src="img/fish-placeholder.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
 	  <!-- Food Marketing 1 -->
         <h5>2 Fish & 3 Scallops</h5>
@@ -69,7 +72,7 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
     </div>
     <div class="carousel-item">
 		<!-- Food Thumbnail 2 -->
-      <img src="img/debug-slug-wide.jpg" class="d-block w-100" alt="...">
+      <img src="img/fish-placeholder.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
 	  <!-- Food Marketing 2 -->
         <h5>12 Prawns</h5>
@@ -78,7 +81,7 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
     </div>
     <div class="carousel-item">
 		<!-- Food Thumbnail 3 -->
-      <img src="img/debug-slug-wide.jpg" class="d-block w-100" alt="...">
+      <img src="img/fish-placeholder.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
 	  <!-- Food Marketing 3 -->
         <h5>Clam Chowder Bowl</h5>
@@ -95,7 +98,11 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<!-- Order Button -->
+<div class="d-flex justify-content-center">
 <button onclick="orderNow()">Order Now</button>
+</div>
+</section>
 <!-- Clovis Site Redirect -->
 <aside>
 <h3>We're Also Open On Clovis!</h3>
