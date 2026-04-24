@@ -9,10 +9,10 @@
 </head>
 <body>
 <!-- Restauraunt Title-->
-<h1>West Coast Fish & Chips</h1>
-<h2>Cookin' London Style</h2> <!-- Will replace with <p> later-->
+<h1 class="wcfc_title">West Coast Fish & Chips</h1>
+<h2 class="wcfc_sub_title">Cookin' London Style</h2> <!-- Will replace with <p> later-->
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary wcfc_navigation">
   <div class="container-fluid">
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -20,20 +20,20 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active wcfc_nav_link" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
+          <a class="nav-link wcfc_nav_link" href="menu.html">Menu</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" href="contact.html">Contact</a>
+          <a class="nav-link wcfc_nav_link" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
 <!-- Welcome Message -->
-<section class="welcome">
+<section class="wcfc_welcome">
 <p>In this little corner of Fresno Street we serve the best fried dishes from the sea, “London Style”.<br>
 From our fried fish to our delectable clam chowder, you can have yourself a taste of the sea right here in the valley.
 </p>
@@ -41,7 +41,7 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
 <!-- Main, with flex control -->
 <main class="d-inline-flex flex-row mb-3">
 <!-- Hours -->
-<aside>
+<aside class="wcfc_side">
 <h3>Find us at</h3>
 <p>4639 N Fresno St, Fresno California</p>
 <h3>Hours:</h3>
@@ -52,7 +52,7 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
 </ul>
 </aside>
 <!-- Food Preview Carousel -->
-<section>
+<section class="wcfc_preview">
 <!-- BUG: Carousel changes in size when sliding to next option, will be fixed via CSS later -->
 <div id="carouselExampleCaptions" class="carousel slide carousel-fade">
   <div class="carousel-indicators">
@@ -99,20 +99,20 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
   </button>
 </div>
 <!-- Order Button -->
-<div class="d-flex justify-content-center">
+<div class="d-flex justify-content-center wcfc_primary_btn">
 <button onclick="orderNow()">Order Now</button>
 </div>
 </section>
 <!-- Clovis Site Redirect -->
-<aside>
+<aside class="wcfc_side">
 <h3>We're Also Open On Clovis!</h3>
-<button onclick="visitClovis()">Visit Us</button>
+<button onclick="visitClovis()" class="wcfc_secondary_btn">Visit Us</button>
 <p>Serving the same food you enjoy, now with a modern aesthetic!</p>
 </aside>
 </main>
-<footer>
-<p>West Coast Fish & Chips 2026</p>
-<a class="nav-link" href="about.html">About Us</a>
+<footer class="wcfc_footer">
+<p class="wcfc_copyright">West Coast Fish & Chips 2026</p>
+<a class="nav-link wcfc_nav_link" href="about.html">About Us</a>
 </footer>
 </body>
 <!-- I will move these to a separate .js file later on -->
