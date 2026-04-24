@@ -20,4 +20,4 @@ I'll be using .html, .css, JavaScript (for certain buttons), and Bootstrap (for 
 ## Progress: HTML
 I've set up the base HTML of the website. With the help of bootstrap, I am able to roughly recreate the desired layout of each page without using CSS yet.
 
-Various edits have been made in order to comply with the current requirements. This is still a work in progress, but I'm confident that the contents of each .html are solid enough that I don't need to make further changes past this current week.
+Various edits have been made in order to comply with the current Final Assignment requirements. Although this is an unofficial and hardly functioning website, I had to make sure it looked "professional" enough. This is still a work in progress, but I'm confident that the contents of each .html are solid enough that I don't need to make further changes past this current week.
