@@ -9,10 +9,10 @@
 </head>
 <body>
 <!-- Restauraunt Title-->
-<h1>West Coast Fish & Chips</h1>
-<h2>Cookin' London Style</h2> <!-- Will replace with <p> later-->
+<h1 class="wcfc_title">West Coast Fish & Chips</h1>
+<h2 class="wcfc_sub_title">Cookin' London Style</h2> <!-- Will replace with <p> later-->
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="navbar navbar-expand-lg bg-body-tertiary wcfc_navigation">
   <div class="container-fluid">
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -20,13 +20,13 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Home</a>
+          <a class="nav-link active wcfc_nav_link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="menu.html">Menu</a>
+          <a class="nav-link wcfc_nav_link" href="menu.html">Menu</a>
         </li>
 		<li class="nav-item">
-          <a class="nav-link" aria-current="page" href="contact.html">Contact</a>
+          <a class="nav-link wcfc_nav_link" aria-current="page" href="contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -34,7 +34,7 @@
 </nav>
 <main>
 <!-- Basic Contact & Address Info-->
-<section class="d-flex flex-column text-center">
+<section class="d-flex flex-column text-center wcfc_contact">
 <h3>Contact Us!</h3>
 <p>Call Us: (559) 123-1234</p>
 <p>4639 N Fresno St, Fresno, CA 93726</p>
@@ -42,39 +42,39 @@
 <div class="d-flex flex-row justify-content-center">
 <!-- Question, Request or Complaint -->
 <section>
-<form>
+<form class="wcfc_form">
 <!-- Email Input -->
-<div class="mb-3">
+<div class="mb-3 wcfc_text_entry">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
 </div>
 <!-- Reason of Contact-->
 <labelclass="form-label">Type of Message</label>
-<select class="form-select" aria-label="Default select example">
+<select class="form-select wcfc_type_entry" aria-label="Default select example">
   <option selected>Question</option>
   <option value="1">Apply for Work</option>
   <option value="2">Complaints</option>
   <option value="3">Marketing Collaboration</option>
 </select>
 <!-- Detail Input -->
-<div class="mb-3">
+<div class="mb-3 wcfc_text_entry">
   <label for="exampleFormControlTextarea1" class="form-label">Explain</label>
   <textarea class="form-control" placeholder="State your question, complaint, or other matters here" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
-  <button type="submit" class="btn btn-primary" onclick="sendMessage()">Submit</button>
+  <button type="submit" class="btn btn-primary wcfc_primary_btn" onclick="sendMessage()">Submit</button>
 </form>
 </section>
 <!-- Social Media Apps -->
 <section>
 <h3>Our Social Accounts!</h3>
-<a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="HTML tutorial" style="width:42px;height:42px;"></a>
-<a href="https://www.instagram.com/?hl=en"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeri46SLi-GHWJo6BUQMHQBLr4FyTZapU1w&s" alt="HTML tutorial" style="width:42px;height:42px;"></a>
+<a href="https://www.facebook.com/"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Facebook" style="width:42px;height:42px;"></a>
+<a href="https://www.instagram.com/?hl=en"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeri46SLi-GHWJo6BUQMHQBLr4FyTZapU1w&s" alt="Instagram" style="width:42px;height:42px;"></a>
 </section>
 </div>
 </main>
-<footer>
-<p>West Coast Fish & Chips 2026</p>
-<a class="nav-link" href="about.html">About Us</a>
+<footer class="wcfc_footer">
+<p class="wcfc_copyright">West Coast Fish & Chips 2026</p>
+<a class="nav-link wcfc_nav_link" href="about.html">About Us</a>
 </footer>
 </body>
 <!-- I will move these to a separate .js file later on -->
