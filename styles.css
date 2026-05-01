@@ -120,7 +120,7 @@ header {
 }
 
 .wcfc_carousel_button {
-	outline: 8px solid white;
+	outline: 8px outset white;
 }
 
 .wcfc_img_preview {
@@ -131,10 +131,9 @@ header {
 }
 
 body .wcfc_img_preview_caption {
-	background-color: white;
-	color: black;
-	border: 8px solid #2F58E0;
-	border-radius: 8px;
+	color: white;
+	text-shadow: -1px 0 #2F58E0, 0 1px #2F58E0, 1px 0 #2F58E0, 0 -1px #2F58E0;
+	font-size: 20px !important;
 }
 
 .wcfc_primary_btn {
@@ -175,6 +174,12 @@ body .wcfc_img_preview_caption {
 	gap: 2rem;
 }
 
+.wcfc_head_label {
+	text-align: center;
+	background-color: #2F58E0;
+	color: white;
+}
+
 .wcfc_label {
 	text-align: center;
 	background-color: white;
@@ -200,12 +205,17 @@ body .wcfc_img_preview_caption {
 
 .wcfc_menu_foldable {
 	background-color: #41ABE0;
-	outline: 8px solid black;
+	outline: 8px outset #FFBB00;
+}
+
+.wcfc_menu_foldable[open="true"] {
+	display: flex;
+	width: 100%;
 }
 
 .wcfc_menu_static {
 	background-color: #41ABE0;
-	outline: 8px solid black;
+	outline: 8px outset #FFBB00;
 }
 
 .wcfc_toggle_label {
@@ -233,7 +243,7 @@ body .wcfc_img_preview_caption {
 	height: 450px;*/
 	width: 32vw;
 	height: 24vw;
-	border: 8px solid #2F58E0;
+	border: 8px outset #2F58E0;
 }
 
 .wcfc_form_n_social {
