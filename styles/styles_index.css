@@ -1,0 +1,75 @@
+/* This stylesheet handles elements EXCLUSIVE to index.html */
+
+/* Welcome Message */
+.wcfc_welcome {
+	text-align: center;
+}
+
+/* Main Section */
+.wcfc_index_flex {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	align-items: center;
+	margin: 1rem 6rem auto;
+}
+
+/* Side cards - General */
+.wcfc_side_clovis, .wcfc_side_info {
+	background-color: #41ABE0;
+}
+
+.wcfc_side_info {
+	padding: 5rem 4rem;
+	display: flex;
+	flex-direction: column;
+}
+
+/* Preview Carousel */
+
+.wcfc_preview {
+		display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.wcfc_carousel { /* It's IMPORTANT that both the carousel and the images use the same dimensions, otherwise the whole thing would change when sliding to the next image*/
+	width: 787px;
+	height: 525px;
+	/*width: 590px;
+	height: 394px;*/
+}
+
+.wcfc_carousel_button {
+	outline: 8px outset white;
+}
+
+.wcfc_img_preview {
+	width: 787px;
+	height: 525px;
+	/*width: 590px;
+	height: 394px;*/
+}
+
+body .wcfc_img_preview_caption {
+	color: white;
+	text-shadow: -1px 0 #2F58E0, 0 1px #2F58E0, 1px 0 #2F58E0, 0 -1px #2F58E0;
+	font-size: 20px !important;
+}
+
+/* Side Card - Clovis */
+
+.wcfc_side_clovis {
+	padding: 4rem 4rem;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.wcfc_side_clovis > img {
+	/*width: 300px;
+	height: 225px;*/
+	width: 225px;
+	height: 169px;
+}

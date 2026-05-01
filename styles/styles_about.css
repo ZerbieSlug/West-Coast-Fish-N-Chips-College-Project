@@ -1,0 +1,25 @@
+/* This is the stylesheet for the about section*/
+
+.wcfc_about_flex {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	margin: auto 12rem; /* Will change with media query */
+	padding-bottom: 12rem;
+}
+
+.wcfc_info_card {
+	background-color: #2F58E0;
+	color: white;
+	margin: 0.5rem 1rem auto 1rem;
+}
+
+.wcfc_info_card > h3 {
+	background-color: white;
+	color: black;
+	text-align: center;
+}
+
+.wcfc_info_desc {
+	margin-left: 8px;
+}

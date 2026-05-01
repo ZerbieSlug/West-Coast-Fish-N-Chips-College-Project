@@ -1,0 +1,44 @@
+/* This stylesheet handles elements EXCLUSIVE to index.html */
+/* Main Flexbox */
+.wcfc_contact_flex {
+	display: flex;
+	flex-direction: row;
+	gap: 2rem;
+	margin: 1rem 12rem auto; /* Will change with media query */
+	padding-bottom: 6rem;
+}
+
+/* Iframe */
+.wcfc_google_maps {
+	/*width: 600px;
+	height: 450px;*/
+	width: 32vw;
+	height: 24vw;
+	border: 8px outset #2F58E0;
+}
+
+/* Form & Social Links */
+.wcfc_form_n_social {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-left: 8rem;
+	gap: 1rem;
+}
+
+.wcfc_form {
+	background-color: #FFBB00;
+	padding: 4rem;
+}
+
+.wcfc_socials {
+	margin-top: 2rem;
+	display: flex;
+	justify-content: center;
+	gap: 1rem;
+}
+
+.wcfc_socials > a > img {
+	width: 84px;
+	height: 84px;
+}

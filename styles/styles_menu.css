@@ -1,0 +1,79 @@
+/* Menu Page - Only applies to menu.html */
+/* Main Flexbox */
+.wcfc_menu_flex {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	margin: 1rem 3rem auto; /* Will change with media query */
+	padding-bottom: 6rem;
+}
+
+/* Individual Section Flex */
+.wcfc_menu_indie {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2rem;
+}
+
+/* Section Headline */
+.wcfc_head_label {
+	text-align: center;
+	background-color: #2F58E0;
+	color: white;
+}
+
+/* Menu Card Label */
+.wcfc_label {
+	text-align: center;
+	background-color: white;
+}
+
+/* "includes with free drink..." */
+.wcfc_inline_note {
+	text-align: center;
+}
+
+/* Best Value & Sandwich Flex */
+.wcfc_menu_bvs {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2rem;
+}
+
+/* Chowder & Other Flex */
+.wcfc_menu_co {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2rem;
+}
+
+/* Interactive Dropdown Menu Cards, opened and unclosable on desktop*/
+.wcfc_menu_foldable {
+	background-color: #41ABE0;
+	outline: 8px outset #FFBB00;
+}
+
+.wcfc_menu_foldable[open="true"] {
+	display: flex;
+	width: 100%;
+}
+
+.wcfc_toggle_label {
+	background-color: white;
+	font-size: 32px;
+}
+
+/* Non-Interactive Menu Cards */
+.wcfc_menu_static {
+	background-color: #41ABE0;
+	outline: 8px outset #FFBB00;
+}
+
+.wcfc_menu_img {
+	width: 15vw;
+	height: auto;
+	margin: 1rem;
+}
