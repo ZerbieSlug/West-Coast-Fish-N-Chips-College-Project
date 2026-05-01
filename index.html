@@ -3,29 +3,36 @@
 <head>
  <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Bootstrap Style Link -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Google Font Link-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caprasimo&family=Varela+Round&display=swap" rel="stylesheet">
+<!-- My Style Sheet -->
+<link href="styles.css" rel="stylesheet">
 <title>Welcome to West Coast Fish & Chips!</title>
-<link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<header>
 <!-- Restauraunt Title-->
 <h1 class="wcfc_title">West Coast Fish & Chips</h1>
 <h2 class="wcfc_sub_title">Cookin' London Style</h2> <!-- Will replace with <p> later-->
+</header>
 <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary wcfc_navigation">
+<nav class="navbar navbar-expand-lg bg-body-tertiary wcfc_nav_base">
   <div class="container-fluid">
   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active wcfc_nav_link" aria-current="page" href="#">Home</a>
+    <div class="collapse navbar-collapse wcfc_nav_container" id="navbarSupportedContent">
+      <ul class="me-auto mb-lg-0 wcfc_nav_select">
+        <li>
+          <a class="nav-link active wcfc_nav_link" href="index.html" aria-current="page">Home</a>
         </li>
-        <li class="nav-item">
+        <li>
           <a class="nav-link wcfc_nav_link" href="menu.html">Menu</a>
         </li>
-		<li class="nav-item">
+		<li>
           <a class="nav-link wcfc_nav_link" href="contact.html">Contact</a>
         </li>
       </ul>
@@ -33,15 +40,15 @@
   </div>
 </nav>
 <!-- Welcome Message -->
-<header class="wcfc_welcome">
+<article class="wcfc_welcome">
 <p>In this little corner of Fresno Street we serve the best fried dishes from the sea, “London Style”.<br>
 From our fried fish to our delectable clam chowder, you can have yourself a taste of the sea right here in the valley.
 </p>
-</header>
+</article>
 <!-- Main, with flex control -->
-<main class="d-inline-flex flex-row mb-3">
+<main class="d-inline-flex flex-row mb-3 wcfc_index_flex">
 <!-- Hours -->
-<aside class="wcfc_side">
+<aside class="wcfc_side_info">
 <h3>Find us at</h3>
 <p>4639 N Fresno St, Fresno California</p>
 <h3>Hours:</h3>
@@ -53,18 +60,17 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
 </aside>
 <!-- Food Preview Carousel -->
 <section class="wcfc_preview">
-<!-- BUG: Carousel changes in size when sliding to next option, will be fixed via CSS later -->
-<div id="carouselExampleCaptions" class="carousel slide carousel-fade">
-  <div class="carousel-indicators">
+<div id="carouselExampleCaptions" class="carousel slide wcfc_carousel_base">
+  <!--<div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
+  </div>-->
+  <div class="carousel-inner wcfc_carousel">
     <div class="carousel-item active">
 	<!-- Food Thumbnail 1 -->
-      <img src="img/preview-fish.jpg" class="d-block w-100" alt="A platter of one fried fish, with fries and condiments on the side. Appears to be missing a key ingredient.">
-      <div class="carousel-caption d-none d-md-block">
+      <img src="img/preview-fish.jpg" class="wcfc_img_preview" alt="A platter of one fried fish, with fries and condiments on the side. Appears to be missing a key ingredient.">
+      <div class="carousel-caption d-none d-md-block wcfc_img_preview_caption">
 	  <!-- Food Marketing 1 -->
         <h5>2 Fish & 3 Scallops</h5>
         <p>"The perfect balance between crunchy and chewy!"</p>
@@ -72,8 +78,8 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
     </div>
     <div class="carousel-item">
 		<!-- Food Thumbnail 2 -->
-      <img src="img/preview-shrimp.jpg" class="d-block w-100" alt="A paper plate of various fried curled shrimps, with fries and condiments on the side.">
-      <div class="carousel-caption d-none d-md-block">
+      <img src="img/preview-shrimp.jpg" class="wcfc_img_preview" alt="A paper plate of various fried curled shrimps, with fries and condiments on the side.">
+      <div class="carousel-caption d-none d-md-block wcfc_img_preview_caption">
 	  <!-- Food Marketing 2 -->
         <h5>12 Prawns</h5>
         <p>"The fruit of the sea, all in one basket!"</p>
@@ -81,8 +87,8 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
     </div>
     <div class="carousel-item">
 		<!-- Food Thumbnail 3 -->
-      <img src="img/menu-chowder.jpg" class="d-block w-100" alt="Closeup of a bread bowl filled with a clam chowder broth">
-      <div class="carousel-caption d-none d-md-block">
+      <img src="img/menu-chowder.jpg" class="wcfc_img_preview" alt="Closeup of a bread bowl filled with a clam chowder broth">
+      <div class="carousel-caption d-none d-md-block wcfc_img_preview_caption">
 	  <!-- Food Marketing 3 -->
         <h5>Clam Chowder Bowl</h5>
         <p>"Our toasty buttery buns should keep that chowder afloat!"</p>
@@ -90,11 +96,11 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
     </div>
   </div>
   <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="carousel-control-prev-icon wcfc_carousel_button" aria-hidden="true"></span>
     <span class="visually-hidden">Previous</span>
   </button>
   <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="carousel-control-next-icon wcfc_carousel_button" aria-hidden="true"></span>
     <span class="visually-hidden">Next</span>
   </button>
 </div>
@@ -104,16 +110,17 @@ From our fried fish to our delectable clam chowder, you can have yourself a tast
 </div>
 </section>
 <!-- Clovis Site Redirect -->
-<aside class="wcfc_side">
+<aside class="wcfc_side_clovis">
 <h3>We're Also Open On Clovis!</h3>
-<img src="img/location-clovis.jpg" class="d-block w-100" alt="The exterior of the Fresno Clovis restaurant. In front of the building is an outdoor dining area.">
+<img src="img/location-clovis.jpg" class="d-block" alt="The exterior of the Fresno Clovis restaurant. In front of the building is an outdoor dining area.">
 <button onclick="visitClovis()" class="wcfc_secondary_btn">Visit Us</button>
-<p>Serving the same food you enjoy, now with a modern aesthetic!</p>
 </aside>
 </main>
 <footer class="wcfc_footer">
 <p class="wcfc_copyright">West Coast Fish & Chips 2026</p>
-<a class="nav-link wcfc_nav_link" href="about.html">About Us</a>
+<div class="wcfc_nav_container">
+<a class="nav-link wcfc_footer_link" href="about.html" aria-current="page">About Us</a>
+</div>
 </footer>
 </body>
 <!-- This will be the only spoof link on this page -->
