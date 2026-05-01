@@ -1,0 +1,91 @@
+/* This style sheet handles navigation, footer, and the most recurring elements throughout the pages */
+/*General*/
+
+h1, h2, h3 {
+	font-family: "Caprasimo";
+}
+p, li {
+	font-family: "Varela Round";
+	font-size: 20px;
+}
+
+/* Logo */
+header {
+	text-align: center;
+	font-family: "Caprasimo";
+}
+
+.wcfc_title {
+	color: #2F58E0;
+}
+
+.wcfc_sub_title {
+	color: #ED2F2F;
+}
+
+/* Navigation */
+.wcfc_nav_base {
+	/*background-color: #FFBB00 !important;*/
+	background-color: #41ABE0 !important;
+}
+
+.wcfc_nav_container {
+	display: flex;
+	justify-content: center;
+}
+
+.wcfc_nav_select {
+	display: flex;
+	gap: 16px;
+	list-style: none;
+	margin-left: 22vw; /* Will use media query to fix later */
+}
+
+/* Navigation Button n States */
+.wcfc_nav_link {
+	/*background-color: #41ABE0;*/
+	background-color: white !important;
+	color: #41ABE0;
+	padding: 1rem 8rem;
+	font-size: 20px;
+	gap: 16px;
+}
+
+.wcfc_nav_link:hover {
+	background-color: #e3e3e3 !important;
+}
+
+.wcfc_nav_link[aria-current="page"] {
+	background-color: #FFBB00 !important;
+	color: black;
+}
+
+/* Primary Button */
+.wcfc_primary_btn {
+	background-color: #ED2F2F;
+	outline: 6px solid #FFBB00;
+	color: white;
+	padding: 1rem 2rem;
+}
+
+/* Footer */
+.wcfc_footer {
+	background-color: #FFBB00;
+	text-align: center;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+/* Footer Button n States */
+
+.wcfc_footer_link {
+	/*background-color: #41ABE0;*/
+	padding: 1rem 2rem;
+	margin-bottom: 1rem;
+}
+
+.wcfc_footer_link:hover {
+	text-decoration: underline;
+	background-color: white;
+}
