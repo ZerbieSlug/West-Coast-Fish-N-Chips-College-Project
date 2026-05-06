@@ -4,7 +4,7 @@
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
-	margin: 1rem 12rem auto; /* Will change with media query */
+	margin: 1rem 28rem auto; /* Will change with media query */
 	padding-bottom: 6rem;
 }
 
@@ -22,7 +22,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	margin-left: 8rem;
 	gap: 1rem;
 }
 
@@ -41,4 +40,31 @@
 .wcfc_socials > a > img {
 	width: 84px;
 	height: 84px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	.wcfc_contact_flex {
+		flex-direction: column;
+		margin: 0rem 0rem auto;
+		padding-bottom: 1rem;
+	}
+	
+	.wcfc_google_maps {
+		width: 100vw;
+		height: 48vw;
+	}
+	
+	h3 {
+		text-align: center;
+	}
+	
+	.wcfc_button_mq {
+		display: flex;
+		justify-content: center;
+	}
+	
+	.wcfc_primary_btn {
+		width: 150%;
+	}
 }
