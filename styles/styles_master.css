@@ -13,6 +13,8 @@ p, li {
 header {
 	text-align: center;
 	font-family: "Caprasimo";
+	background: linear-gradient(180deg,rgba(255, 255, 255, 1) 65%, rgba(173, 219, 242, 1) 85%, rgba(65, 171, 224, 1) 100%);
+	padding-bottom: 1rem;
 }
 
 .wcfc_title {
