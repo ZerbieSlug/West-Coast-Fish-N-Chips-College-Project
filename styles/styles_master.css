@@ -93,7 +93,7 @@ header {
 @media (max-width: 768px) {
 	.wcfc_nav_select {
 		margin-top: 8px;
-		margin-left: 8vw;
+		margin-left: 0vw;
 		justify-content: center;
 	}
 }
