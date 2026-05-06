@@ -25,25 +25,24 @@ header {
 
 /* Navigation */
 .wcfc_nav_base {
-	/*background-color: #FFBB00 !important;*/
 	background-color: #41ABE0 !important;
+	--bs-navbar-nav-link-padding-x: 8.5rem;
 }
 
 .wcfc_nav_container {
 	display: flex;
 	justify-content: center;
+	gap: 16px;
 }
 
 .wcfc_nav_select {
 	display: flex;
-	gap: 16px;
+	gap: 32px;
 	list-style: none;
-	margin-left: 22vw; /* Will use media query to fix later */
 }
 
 /* Navigation Button n States */
 .wcfc_nav_link {
-	/*background-color: #41ABE0;*/
 	background-color: white !important;
 	color: #41ABE0;
 	padding: 1rem 8rem;
@@ -88,4 +87,13 @@ header {
 .wcfc_footer_link:hover {
 	text-decoration: underline;
 	background-color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+	.wcfc_nav_select {
+		margin-top: 8px;
+		margin-left: 8vw;
+		justify-content: center;
+	}
 }
