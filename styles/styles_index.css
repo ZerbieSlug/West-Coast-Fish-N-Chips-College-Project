@@ -11,7 +11,7 @@
 	flex-direction: row;
 	gap: 1rem;
 	align-items: center;
-	margin: 1rem 6rem auto;
+	margin: 1rem 6rem 2rem;
 }
 
 /* Side cards - General */
@@ -79,7 +79,7 @@ body .wcfc_img_preview_caption {
 	.wcfc_index_flex {
 		display: flex;
 		flex-direction: column;
-		margin: 1rem 2rem auto;
+		margin: 1rem 2rem 0.5rem;
 	}
 	
 	.wcfc_carousel {
