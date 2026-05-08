@@ -73,3 +73,48 @@ body .wcfc_img_preview_caption {
 	width: 225px;
 	height: 169px;
 }
+
+/* Media Queries */
+@media (max-width: 768px) {
+	.wcfc_index_flex {
+		display: flex;
+		flex-direction: column;
+		margin: 1rem 2rem auto;
+	}
+	
+	.wcfc_carousel {
+		width: 394px;
+		height: 263px;
+	}
+	
+	.wcfc_img_preview {
+		width: 394px;
+		height: 263px;
+	}
+	
+	body .wcfc_img_preview_caption {
+		font-size: 12px !important;
+		background-color: white;
+		color: #2F58E0;
+		text-shadow: none;
+		padding-top: 0rem;
+		padding-bottom: 0rem;
+		outline: 4px solid #2F58E0;
+	}
+	
+	.wcfc_side_info {
+	padding: 1rem 1rem;
+	flex-direction: column;
+	text-align: center;
+	}
+	
+	.wcfc_side_clovis {
+		padding: 1rem 1rem;
+		text-align: center;
+		margin-bottom: 1rem;
+	}
+	
+	.wcfc_mobile_hide {
+		display: none;
+	}
+}
