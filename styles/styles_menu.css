@@ -8,8 +8,19 @@
 	padding-bottom: 6rem;
 }
 
+/* Accordions */
+.accordion {
+	--bs-accordion-body-padding-x: 8rem;
+}
 /* Individual Section Flex */
 .wcfc_menu_indie {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	gap: 2rem;
+}
+
+#wcfc_menu_indi_accordion {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
@@ -35,15 +46,20 @@
 }
 
 /* Best Value & Sandwich Flex */
-.wcfc_menu_bvs {
+#wcfc_menu_hrec_accordion {
 	display: flex;
 	flex-direction: row;
-	justify-content: center;
+	gap: 2rem;
+}
+
+.wcfc_menu_accord_flex {
+	display: flex;
+	flex-direction: row;
 	gap: 2rem;
 }
 
 /* Chowder & Other Flex */
-.wcfc_menu_co {
+#wcfc_menu_other_accordion {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
