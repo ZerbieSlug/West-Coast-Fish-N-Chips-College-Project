@@ -26,7 +26,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse wcfc_nav_container" id="navbarSupportedContent">
-      <ul class="me-auto mb-lg-0 wcfc_nav_select">
+      <ul class="navbar-nav mb-2 mb-lg-0 wcfc_nav_select">
         <li>
           <a class="nav-link active wcfc_nav_link" href="index.html">Home</a>
         </li>
@@ -47,48 +47,79 @@
 <h3 class="wcfc_head_label">Individual Meals</h3>
 <p class="wcfc_inline_note">*Includes fries & a drink</p>
 </section>
-<!-- Individual Section -->
+<!-- Individual Section-->
 <section class="wcfc_menu_indie">
-<!-- Only Fish -->
-<details class="wcfc_menu_foldable" open> <!-- On desktop view, this eventually would display as a 'card' instead of a detail dropdown-->
-<summary class="wcfc_toggle_label">Only Fish</summary>
-<ul>
-<li>1 Fish ($7.99)</li>
-<li>2 Fish ($9.99)</li>
-<li>3 Fish ($13.99)</li>
-</ul>
-<img src="img/preview-fish.jpg" class="d-block wcfc_menu_img" alt="A platter of one fried fish, with fries and condiments on the side.">
-</details>
-<!-- One Fish Combos -->
-<details class="wcfc_menu_foldable" open>
-<summary class="wcfc_toggle_label">One Fish Combos ($9.99)</summary>
-<ul>
-<li>+ 4 Prawns</li>
-<li>+ 2 Chicken Strips</li>
-<li>+ 3 Scallops</li>
-</ul>
-<img src="img/menu-fish-shrimp.jpg" class="d-block wcfc_menu_img" alt="A platter of one fried fish and a bunch of fried shrimp. In between there are fries, hush puppies, and condiments.">
-</details>
-<!-- Two Fish Combos -->
-<details class="wcfc_menu_foldable" open>
-<summary class="wcfc_toggle_label">Two Fish Combos</summary>
-<ul>
-<li>+ 8 Calamari ($15.99)</li>
-<li>+ Clam Strips ($15.99)</li>
-<li>+ 6 Oysters ($17.99)</li>
-</ul>
-<img src="img/menu-oyster.jpg" class="d-block wcfc_menu_img" alt="A couple of oysters prepared on a platter. Missing the 2 fried fish.">
-</details>
+<div class="accordion accordion-flush" id="wcfc_menu_indi_accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+        Only Fish
+      </button>
+    </h2>
+    <div id="flush-collapseOne" class="accordion-collapse collapse">
+      <div class="accordion-body">
+	  	<ul>
+			<li>1 Fish ($7.99)</li>
+			<li>2 Fish ($9.99)</li>
+			<li>3 Fish ($13.99)</li>
+		</ul>
+		<img src="img/preview-fish.jpg" class="d-block wcfc_menu_img" alt="A platter of one fried fish, with fries and condiments on the side.">
+	  </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+        One Fish Combos
+      </button>
+    </h2>
+    <div id="flush-collapseTwo" class="accordion-collapse collapse">
+      <div class="accordion-body">
+		<ul>
+			<li>+ 4 Prawns</li>
+			<li>+ 2 Chicken Strips</li>
+			<li>+ 3 Scallops</li>
+		</ul>
+		<img src="img/menu-fish-shrimp.jpg" class="d-block wcfc_menu_img" alt="A platter of one fried fish and a bunch of fried shrimp. In between there are fries, hush puppies, and condiments.">
+	  </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+        Two Fish Combos
+      </button>
+    </h2>
+    <div id="flush-collapseThree" class="accordion-collapse collapse">
+      <div class="accordion-body">
+	<ul>
+		<li>+ 8 Calamari ($15.99)</li>
+		<li>+ Clam Strips ($15.99)</li>
+		<li>+ 6 Oysters ($17.99)</li>
+	</ul>
+	<img src="img/menu-oyster.jpg" class="d-block wcfc_menu_img" alt="A couple of oysters prepared on a platter. Missing the 2 fried fish.">
+
+	  </div>
+    </div>
+  </div>
+</div>
 </section>
-<!-- Best Value & Sandwich Section-->
+<!-- Best Value & Sandwich Section (Old)-->
 <h2 class="wcfc_head_label">Highly Recommended</h2>
 <section class="wcfc_menu_bvs">
-<!-- Best Value -->
-<div class="wcfc_menu_static">
-<h2 class="wcfc_label">Best Value Meals</h2>
-<p class="wcfc_inline_note">*Includes fries & a drink</p>
-<div class="d-flex flex-row justify-content-center">
-<ul>
+<!-- Best Value& Sandwich Section-->
+<div class="accordion accordion-flush" id="wcfc_menu_hrec_accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+        Best Value Meals
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse">
+      <div class="accordion-body">
+	  <p class="wcfc_inline_note">*Includes fries & a drink</p>
+	  <div class="wcfc_menu_accord_flex">
+	  <ul>
 <li>1 Fish & 9 Prawns ($14.99)</li>
 <li>1 Fish & 6 Scallops ($14.99)</li>
 <li>2 Fish & 3 Scallops ($14.99)</li>
@@ -101,34 +132,64 @@
 <li>Sampler (1 Fish + 3 Prawns + 2 Oysters + 2 Scallops) ($13.99)</li>
 </ul>
 </div>
-</div>
-<!-- Sandwiches -->
-<div class="wcfc_menu_static">
-<h2 class="wcfc_label">Sandwiches</h2>
-<p class="wcfc_inline_note">*Includes fries & a drink</p>
-<ul>
+	  </div>
+    </div>
+  </div>
+  <div class="accordion-item wcfc_menu_sandwich">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Sandwiches
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse">
+      <div class="accordion-body">
+	  <p class="wcfc_inline_note">*Includes fries & a drink</p>
+		<ul>
 <li>Chicken Sandwich ($7.99)</li>
 <li>Fish Sandwich ($7.99)</li>
 </ul>
 <img src="img/menu-chicken-sandwich.jpg" class="d-block wcfc_menu_img" alt="A chicken sandwich with a toasted sesame seed bun, topped with various vegetables, its meat doused in various condiments. Accompanied by fries and condiments">
+	  </div>
+    </div>
+  </div>
 </div>
 </section>
-<!-- Side Order Section -->
+<!-- Side Order Section (old) -->
 <h2 class="wcfc_head_label">On The Side</h2>
 <section class="d-flex flex-row justify-content-center wcfc_menu_co">
-<!-- CHOWDER -->
-<details open class="wcfc_menu_foldable">
-<summary class="wcfc_toggle_label">Clam Chowder</summary>
-<ul>
+<!-- Side Order Section (New) -->
+<div class="accordion accordion-flush" id="wcfc_menu_other_accordion">
+  <div class="accordion-item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseOne">
+        Clam Chowder
+      </button>
+    </h2>
+    <div id="flush-collapseFour" class="accordion-collapse collapse">
+      <div class="accordion-body">
+	  <p class="wcfc_inline_note">*Includes fries & a drink</p>
+	  <div class="wcfc_menu_bvm_flex">
+	  <ul>
 <li>Small ($5.99)</li>
 <li>Medium ($6.99)</li>
 <li>Large ($7.99)</li>
 <li>Bread Bowl ($12.99)</li>
 </ul>
 <img src="img/menu-chowder.jpg" class="d-block wcfc_menu_img" alt="Closeup of a bread bowl filled with a clam chowder broth">
-</details>
-<!-- Other Sides -->
-<div class="wcfc_menu_static">
+
+</div>
+	  </div>
+    </div>
+  </div>
+  <div class="accordion-item wcfc_menu_sandwich">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseTwo">
+        Greens
+      </button>
+    </h2>
+    <div id="flush-collapseFive" class="accordion-collapse collapse">
+      <div class="accordion-body">
+	  <p class="wcfc_inline_note">*Includes fries & a drink</p>
 <ul>
 <li>Onion Ring & Zucchini ($4.99)</li>
 <li>Pickle Fries ($4.99)</li>
@@ -136,6 +197,9 @@
 <li>Vegetable Combo ($12.99)</li>
 </ul>
 <img src="img/menu-veg-combo.jpg" class="d-block wcfc_menu_img" alt="A salad bowl of assorted vegetables">
+	  </div>
+    </div>
+  </div>
 </div>
 </section>
 </main>
