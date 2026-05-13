@@ -12,14 +12,24 @@
 .accordion {
 	--bs-accordion-body-padding-x: 8rem;
 }
-/* Individual Section Flex */
-.wcfc_menu_indie {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	gap: 2rem;
+
+.wcfc_accordion_label {
+	font-size: 2rem;
 }
 
+.wcfc_accordion_label[aria-expanded="true"] {
+	background-color: #FFBB00;
+}
+
+.accordion-body {
+	background-color: #41ABE0;
+}
+
+::after {
+	display: none;
+}
+
+/* Individual Section Flex */
 #wcfc_menu_indi_accordion {
 	display: flex;
 	flex-direction: row;
@@ -34,10 +44,12 @@
 	color: white;
 }
 
-/* Menu Card Label */
-.wcfc_label {
+.wcfc_head_primary_label {
+	background-color: #ED2F2F;
+	color: white;
 	text-align: center;
-	background-color: white;
+	padding-top: 2rem;
+	padding-bottom: 2rem;
 }
 
 /* "includes with free drink..." */
@@ -56,6 +68,7 @@
 	display: flex;
 	flex-direction: row;
 	gap: 2rem;
+	padding-bottom: 7rem;
 }
 
 /* Chowder & Other Flex */
@@ -66,30 +79,51 @@
 	gap: 2rem;
 }
 
-/* Interactive Dropdown Menu Cards, opened and unclosable on desktop*/
-.wcfc_menu_foldable {
-	background-color: #41ABE0;
-	outline: 8px outset #FFBB00;
-}
-
-.wcfc_menu_foldable[open="true"] {
+.wcfc_menu_drink_flex {
 	display: flex;
-	width: 100%;
-}
-
-.wcfc_toggle_label {
-	background-color: white;
-	font-size: 32px;
-}
-
-/* Non-Interactive Menu Cards */
-.wcfc_menu_static {
-	background-color: #41ABE0;
-	outline: 8px outset #FFBB00;
+	flex-direction: row;
+	gap: 2rem;
 }
 
 .wcfc_menu_img {
 	width: 15vw;
 	height: auto;
 	margin: 1rem;
+}
+
+@media (max-width: 768px) {
+	
+	.wcfc_menu_flex {
+	gap: 1rem;
+	margin: 0.5rem 1rem auto; /* Will change with media query */
+	padding-bottom: 3rem;
+}
+
+	.accordion {
+	--bs-accordion-body-padding-x: 2rem;
+}
+
+	::after {
+	display: inline;
+}
+	#wcfc_menu_indi_accordion {
+	flex-direction: column;
+	gap: 1rem;
+}
+
+#wcfc_menu_hrec_accordion {
+	flex-direction: column;
+	gap: 1rem;
+}
+
+.wcfc_menu_accord_flex {
+	flex-direction: column;
+	gap: 1rem;
+	padding-bottom: 0rem;
+}
+
+#wcfc_menu_other_accordion {
+	flex-direction: column;
+	gap: 1rem;
+}
 }
