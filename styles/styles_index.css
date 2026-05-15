@@ -1,15 +1,30 @@
 /* This stylesheet handles elements EXCLUSIVE to index.html */
 
+/* Headings */
+.wcfc_side_heading {
+	color: white;
+}
+
+h3 {
+	color: #2F58E0;
+}
+
 /* Welcome Message */
 .wcfc_welcome {
 	text-align: center;
+	margin: 1rem 8rem 1rem;
+	color: #41ABE0;
+}
+
+.wcfc_welcome > h3 {
+	color: inherit;
 }
 
 /* Main Section */
 .wcfc_index_flex {
 	display: flex;
 	flex-direction: row;
-	gap: 1rem;
+	gap: 1.5rem;
 	align-items: center;
 	margin: 1rem 6rem 2rem;
 }
@@ -19,10 +34,14 @@
 	background-color: #41ABE0;
 }
 
-.wcfc_side_info {
-	padding: 5rem 4rem;
+.wcfc_side_info, .wcfc_side_clovis {
+	padding: 4rem 4rem;
+	align-items: center;
 	display: flex;
 	flex-direction: column;
+	gap: 1rem;
+	outline: 4px solid #2F58E0;
+	border: 8px solid white;
 }
 
 /* Preview Carousel */
@@ -33,15 +52,25 @@
 	gap: 1rem;
 }
 
+.wcfc_preview > h3 {
+	text-align: center;
+}
+
 .wcfc_carousel { /* It's IMPORTANT that both the carousel and the images use the same dimensions, otherwise the whole thing would change when sliding to the next image*/
 	width: 787px;
 	height: 525px;
+	outline: 8px solid #2F58E0;
+	border: 8px solid white;
 	/*width: 590px;
 	height: 394px;*/
 }
 
 .wcfc_carousel_button {
 	outline: 8px outset white;
+}
+
+.carousel-control-prev:focus-visible, .carousel-control-next:focus-visible {
+	background-color: rgba(237, 47, 47, 0.5);
 }
 
 .wcfc_img_preview {
@@ -52,20 +81,15 @@
 }
 
 body .wcfc_img_preview_caption {
-	color: white;
-	text-shadow: -1px 0 #2F58E0, 0 1px #2F58E0, 1px 0 #2F58E0, 0 -1px #2F58E0;
+	color: #2F58E0;
+	background-color: white;
 	font-size: 20px !important;
+	padding-top: 0rem;
+	padding-bottom: 0rem;
+	outline: 4px solid #2F58E0;
 }
 
 /* Side Card - Clovis */
-
-.wcfc_side_clovis {
-	padding: 4rem 4rem;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-}
 
 .wcfc_side_clovis > img {
 	/*width: 300px;
@@ -76,6 +100,10 @@ body .wcfc_img_preview_caption {
 
 /* Media Queries */
 @media (max-width: 768px) {
+	.wcfc_welcome {
+		margin: 1rem 2rem 1rem;
+	}
+	
 	.wcfc_index_flex {
 		display: flex;
 		flex-direction: column;
