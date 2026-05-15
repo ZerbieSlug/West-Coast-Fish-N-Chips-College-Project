@@ -8,6 +8,10 @@
 	padding-bottom: 6rem;
 }
 
+.wcfc_contact_header {
+	color: #2F58E0;
+}
+
 /* Skip */
 .skip {
   position: absolute;
@@ -34,7 +38,9 @@
 	height: 450px;*/
 	width: 32vw;
 	height: 24vw;
-	border: 8px outset #2F58E0;
+	border: 8px solid white;
+	outline: 8px solid #2F58E0;
+	filter: drop-shadow(0px 14px 4px #92b6c0);
 }
 
 /* Form & Social Links */
@@ -42,12 +48,15 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	gap: 1rem;
+	gap: 1.5rem;
 }
 
 .wcfc_form {
 	background-color: #FFBB00;
 	padding: 4rem;
+	border: 8px solid white;
+	outline: 8px solid #FFBB00;
+	filter: drop-shadow(0px 14px 4px #92b6c0);
 }
 
 .wcfc_socials {
@@ -62,11 +71,12 @@
 	height: 84px;
 }
 
-.wcfc_social_link:focus-visible {
-	outline: 4px solid #ED2F2F;
+.wcfc_social_link {
+	border: 8px solid white;
+	filter: drop-shadow(0px 14px 4px #92b6c0);
 }
 
-.form-control:focus-visible, .wcfc_type_entry:focus-visible {
+.wcfc_social_link:focus-visible, .form-control:focus-visible, .wcfc_type_entry:focus-visible {
 	outline: 4px solid #ED2F2F;
 }
 
@@ -79,7 +89,8 @@
 	}
 	
 	.wcfc_google_maps {
-		width: 100vw;
+		margin-left: 8px;
+		width: 95vw;
 		height: 48vw;
 	}
 	
