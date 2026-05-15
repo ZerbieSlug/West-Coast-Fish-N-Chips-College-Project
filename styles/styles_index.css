@@ -42,6 +42,12 @@ h3 {
 	gap: 1rem;
 	outline: 4px solid #2F58E0;
 	border: 8px solid white;
+	filter: drop-shadow(0px 14px 4px #92b6c0);
+}
+
+.wcfc_side_clovis > img {
+	border: 8px solid white;
+	filter: drop-shadow(-9px 10px 4px #322b91);
 }
 
 /* Preview Carousel */
@@ -49,7 +55,7 @@ h3 {
 .wcfc_preview {
 		display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 1.5rem;
 }
 
 .wcfc_preview > h3 {
@@ -61,6 +67,7 @@ h3 {
 	height: 525px;
 	outline: 8px solid #2F58E0;
 	border: 8px solid white;
+	filter: drop-shadow(0px 14px 4px #92b6c0);
 	/*width: 590px;
 	height: 394px;*/
 }
