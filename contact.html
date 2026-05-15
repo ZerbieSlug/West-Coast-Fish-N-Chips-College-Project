@@ -16,8 +16,11 @@
 <body>
 <header>
 <!-- Restauraunt Title-->
-<h1 class="wcfc_title">West Coast Fish & Chips</h1>
-<h2 class="wcfc_sub_title">Cookin' London Style</h2> <!-- Will replace with <p> later-->
+<img src="img/logo-sm.png" class="wcfc_fish">
+<div class="wcfc_logo_title">
+<h1 class="wcfc_title">West Coast Fish n' Chips</h1>
+<h2 class="wcfc_sub_title">Cookin' London Style</h2>
+</div>
 </header>
 <!-- Navigation Bar -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary wcfc_nav_base">
@@ -26,15 +29,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse wcfc_nav_container" id="navbarSupportedContent">
+	<a href="#wcfc_form_skip" class="skip">Skip to Messaging!</a>
       <ul class="navbar-nav mb-2 mb-lg-0 wcfc_nav_select">
         <li>
-          <a class="nav-link active wcfc_nav_link" href="index.html">Home</a>
+          <a class="nav-link wcfc_nav_link" href="index.html">Home</a>
         </li>
         <li>
           <a class="nav-link wcfc_nav_link" href="menu.html">Menu</a>
         </li>
 		<li>
-          <a class="nav-link wcfc_nav_link" href="contact.html" aria-current="page">Contact</a>
+          <a class="nav-link active wcfc_nav_link" href="contact.html" aria-current="page">Contact</a>
         </li>
       </ul>
     </div>
@@ -59,7 +63,7 @@
 <!-- Email Input -->
 <div class="mb-3 wcfc_text_entry">
   <label for="exampleFormControlInput1" class="form-label">Email address</label>
-  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  <input type="email" class="form-control" id="wcfc_form_skip" placeholder="name@example.com">
 </div>
 <!-- Reason of Contact-->
 <labelclass="form-label">Type of Message</label>
@@ -75,7 +79,7 @@
   <textarea class="form-control" placeholder="State your question, complaint, or other matters here" id="exampleFormControlTextarea1" rows="3"></textarea>
 </div>
 <div class="wcfc_button_mq">
-  <button type="submit" class="btn btn-primary wcfc_primary_btn" onclick="sendMessage()">Submit</button>
+  <button type="submit" class="wcfc_primary_btn" onclick="sendMessage()">Submit</button>
 </div>
 </form>
 </section>
@@ -83,8 +87,8 @@
 <section>
 <h3>Our Social Accounts!</h3>
 <div class="wcfc_socials">
-<a href="https://www.facebook.com/pages/West%20Coast%20Fish%20n'%20Chips/107115572710961/"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Unofficial Facebook Page" loading="lazy"></a>
-<a href="https://www.instagram.com/explore/locations/747959256/west-coast-fish-and-chips/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeri46SLi-GHWJo6BUQMHQBLr4FyTZapU1w&s" alt="Unofficial Instagram Page" loading="lazy"></a>
+<a class="wcfc_social_link" href="https://www.facebook.com/pages/West%20Coast%20Fish%20n'%20Chips/107115572710961/"><img src="https://cdn-icons-png.flaticon.com/256/124/124010.png" alt="Unofficial Facebook Page" loading="lazy"></a>
+<a class="wcfc_social_link" href="https://www.instagram.com/explore/locations/747959256/west-coast-fish-and-chips/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREeri46SLi-GHWJo6BUQMHQBLr4FyTZapU1w&s" alt="Unofficial Instagram Page" loading="lazy"></a>
 </div>
 </section>
 </div>
