@@ -93,6 +93,10 @@
 	border: 8px solid white;
 }
 
+.wcfc_menu_drink_beer > h3, .wcfc_menu_drink_soda > h3 {
+	color: white;
+}
+
 @media (max-width: 768px) {
 	
 	.wcfc_menu_flex {
