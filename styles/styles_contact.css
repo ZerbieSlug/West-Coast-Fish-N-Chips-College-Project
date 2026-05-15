@@ -8,6 +8,26 @@
 	padding-bottom: 6rem;
 }
 
+/* Skip */
+.skip {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background-color: #ED2F2F;
+  font-size: 1.5rem;
+}
+
+.skip:focus {
+  position: static;
+  width: 16rem;
+  height: 3rem;
+  outline: 0.5rem solid #FFBB00;
+  color: white;
+  text-align: center;
+}
+
 /* Iframe */
 .wcfc_google_maps {
 	/*width: 600px;
@@ -40,6 +60,14 @@
 .wcfc_socials > a > img {
 	width: 84px;
 	height: 84px;
+}
+
+.wcfc_social_link:focus-visible {
+	outline: 4px solid #ED2F2F;
+}
+
+.form-control:focus-visible, .wcfc_type_entry:focus-visible {
+	outline: 4px solid #ED2F2F;
 }
 
 /* Media Queries */
