@@ -9,12 +9,24 @@ p, li {
 	font-size: 20px;
 }
 
+ul {
+list-style-type: square;
+}
+
 /* Logo */
 header {
-	text-align: center;
 	font-family: "Caprasimo";
 	background: linear-gradient(180deg,rgba(255, 255, 255, 1) 65%, rgba(173, 219, 242, 1) 85%, rgba(65, 171, 224, 1) 100%);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	padding-bottom: 1rem;
+}
+
+.wcfc_logo_title {
+	display: flex;
+	flex-direction: column;
+		text-align: center;
 }
 
 .wcfc_title {
@@ -50,10 +62,20 @@ header {
 	padding: 1rem 8rem;
 	font-size: 20px;
 	gap: 16px;
+	transition: all 0.3s ease;
 }
 
 .wcfc_nav_link:hover {
 	background-color: #e3e3e3 !important;
+}
+
+.wcfc_nav_link:focus-visible {
+	border: 8px solid #ED2F2F;
+}
+
+.wcfc_nav_link:active {
+	background-color: #858585 !important;
+	color: white
 }
 
 .wcfc_nav_link[aria-current="page"] {
@@ -61,12 +83,55 @@ header {
 	color: black;
 }
 
+.wcfc_nav_link[aria-current="page"]:hover {
+	background-color: #ffde82 !important;
+}
+
+.wcfc_nav_link[aria-current="page"]:active {
+	background-color: #d99100 !important;
+}
+
 /* Primary Button */
 .wcfc_primary_btn {
 	background-color: #ED2F2F;
-	outline: 6px solid #FFBB00;
+	border: 6px solid #FFBB00;
 	color: white;
 	padding: 1rem 2rem;
+	transition: all 0.3s ease;
+	font-size: 20px;
+}
+
+.wcfc_primary_btn:focus-visible {
+	border: 8px solid black;
+}
+
+.wcfc_primary_btn:hover {
+	background-color: #f77272;
+}
+
+.wcfc_primary_btn:active {
+	background-color: #07b504;
+	border: 6px solid red;
+}
+
+.wcfc_secondary_btn {
+	background-color: white;
+	border: 6px solid #FFBB00;
+	transition: all 0.3s ease;
+	padding: 1rem 2rem;
+}
+
+.wcfc_secondary_btn:hover {
+	background-color: #e3e3e3;
+}
+
+.wcfc_secondary_btn:active {
+	background-color: #858585;
+	color: white;
+}
+
+.wcfc_secondary_btn:focus-visible {
+	border: 8px solid black;
 }
 
 /* Footer */
@@ -84,11 +149,16 @@ header {
 	/*background-color: #41ABE0;*/
 	padding: 1rem 2rem;
 	margin-bottom: 1rem;
+	transition: all 0.3s ease;
+	font-size: 20px;
 }
 
 .wcfc_footer_link:hover {
 	text-decoration: underline;
-	background-color: white;
+}
+
+.wcfc_footer_link:focus-visible {
+	border: 8px solid #ED2F2F;
 }
 
 /* Media Queries */
