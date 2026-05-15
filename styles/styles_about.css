@@ -5,18 +5,48 @@
 	flex-direction: row;
 	gap: 2rem;
 	margin: auto 12rem; /* Will change with media query */
-	padding-bottom: 12rem;
+	padding-bottom: 6rem;
 }
 
 .wcfc_info_card {
+	display: flex;
+	flex-direction: column;
 	background-color: #2F58E0;
 	color: white;
 	margin: 0.5rem 1rem auto 1rem;
+	align-items: center;
+}
+
+.wcfc_fish_who, .wcfc_fish_what {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	padding: 0.5rem 0.25rem;
+}
+
+.wcfc_fish_who > p, .wcfc_fish_what > p {
+	background-color: white;
+	color: #2F58E0;
+	border-radius: 2rem;
+	padding: 1rem;
+}
+
+.wcfc_fish_who > img, .wcfc_fish_what > img {
+	width: 154px;
+	height: 88px;
+}
+
+.wcfc_fish_what > img {
+	transform: scaleX(-1);
+}
+
+.wcfc_about_conserve {
+	padding-bottom: 4px;
 }
 
 .wcfc_info_card > h3 {
-	background-color: white;
-	color: black;
+	color: white;
 	text-align: center;
 }
 
