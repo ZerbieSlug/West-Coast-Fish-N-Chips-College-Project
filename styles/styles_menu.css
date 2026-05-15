@@ -37,8 +37,9 @@
 	gap: 2rem;
 }
 
-/* Section Headline */
-.wcfc_head_label {
+/* Section Headlines */
+
+.wcfc_head_label, .wcfc_inline_note {
 	text-align: center;
 	background-color: #2F58E0;
 	color: white;
@@ -54,7 +55,7 @@
 
 /* "includes with free drink..." */
 .wcfc_inline_note {
-	text-align: center;
+	padding-top: 1rem;
 }
 
 /* Best Value & Sandwich Flex */
