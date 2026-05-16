@@ -9,6 +9,27 @@ h3 {
 	color: #2F58E0;
 }
 
+/* Skip */
+.skip {
+  position: absolute;
+  left: -10000px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  background-color: #ED2F2F;
+  font-size: 1.5rem;
+  	transition: all 0.3s ease;
+}
+
+.skip:focus {
+  position: static;
+  width: 16rem;
+  height: 3rem;
+  outline: 0.5rem solid #FFBB00;
+  color: white;
+  text-align: center;
+}
+
 /* Welcome Message */
 .wcfc_welcome {
 	text-align: center;
