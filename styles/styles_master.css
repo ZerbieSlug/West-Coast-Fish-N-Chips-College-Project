@@ -158,7 +158,10 @@ header {
 }
 
 .wcfc_footer_link:focus-visible {
-	border: 8px solid #ED2F2F;
+	color: #ED2F2F;
+	font-weight: bold;
+	font-size: 35px;
+	text-decoration: underline;
 }
 
 /* Media Queries */
