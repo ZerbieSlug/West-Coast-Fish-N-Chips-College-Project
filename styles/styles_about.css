@@ -58,7 +58,7 @@
 }
 
 /* Media Queries */
-@media (max-width: 834px) {
+@media (max-width: 1210px) {
 	.wcfc_about_flex {
 		flex-direction: column;
 		gap: 1rem;
