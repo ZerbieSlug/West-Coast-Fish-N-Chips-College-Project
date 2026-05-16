@@ -127,7 +127,7 @@ body .wcfc_img_preview_caption {
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 834px) {
 	.wcfc_welcome {
 		margin: 1rem 2rem 1rem;
 	}
