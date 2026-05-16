@@ -58,11 +58,24 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 834px) {
 	.wcfc_about_flex {
 		flex-direction: column;
 		gap: 1rem;
 		margin: auto 3rem;
 		padding-bottom: 3rem;
 	}
+
+.wcfc_fish_who, .wcfc_fish_what {
+	padding: 0.25rem 0.1rem;
+}
+	
+	.wcfc_fish_who > p, .wcfc_fish_what > p {
+	padding: 1rem;
+}
+
+.wcfc_fish_who > img, .wcfc_fish_what > img {
+	width: 120px;
+	height: 66px;
+}
 }
