@@ -96,7 +96,7 @@
 }
 
 /* Media Queries */
-@media (max-width: 768px) {
+@media (max-width: 1210px) {
 	.wcfc_contact_flex {
 		flex-direction: column;
 		margin: 0rem 0rem auto;
@@ -104,8 +104,8 @@
 	}
 	
 	.wcfc_google_maps {
-		margin-left: 8px;
-		width: 95vw;
+		align-self: center;
+		width: 64vw;
 		height: 48vw;
 	}
 	
@@ -120,5 +120,13 @@
 	
 	.wcfc_primary_btn {
 		width: 150%;
+	}
+}
+
+@media (max-width: 834px) {
+		.wcfc_google_maps {
+		align-self: center;
+		width: 95vw;
+		height: 48vw;
 	}
 }
