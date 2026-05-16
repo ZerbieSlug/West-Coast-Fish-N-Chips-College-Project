@@ -14,6 +14,7 @@ This website relies on .html, .css, and javascript to function. Bootstrap was us
 
 ## Features
 - Responsive Design, compatible with a majority of devices
+- "Skip" button for accessibility
 - Interactive "Popular Preview" carousel
 - "functional" order button
 - Collapsing Menu for Mobile Displays
