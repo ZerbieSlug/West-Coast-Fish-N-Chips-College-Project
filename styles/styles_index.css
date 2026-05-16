@@ -127,7 +127,7 @@ body .wcfc_img_preview_caption {
 }
 
 /* Media Queries */
-@media (max-width: 834px) {
+@media (max-width: 1210px) {
 	.wcfc_welcome {
 		margin: 1rem 2rem 1rem;
 	}
@@ -139,13 +139,13 @@ body .wcfc_img_preview_caption {
 	}
 	
 	.wcfc_carousel {
-		width: 394px;
-		height: 263px;
+		width: 787px;
+		height: 525px;
 	}
 	
 	.wcfc_img_preview {
-		width: 394px;
-		height: 263px;
+		width: 787px;
+		height: 525px;
 	}
 	
 	body .wcfc_img_preview_caption {
@@ -172,5 +172,17 @@ body .wcfc_img_preview_caption {
 	
 	.wcfc_mobile_hide {
 		display: none;
+	}
+}
+
+@media (max-width: 834px) {
+	.wcfc_carousel {
+		width: 394px;
+		height: 263px;
+	}
+	
+	.wcfc_img_preview {
+		width: 394px;
+		height: 263px;
 	}
 }
