@@ -105,8 +105,8 @@
 	color: white;
 }
 
-@media (max-width: 834px) {
-	.wcfc_menu_flex {
+@media (max-width: 1210px) {
+		.wcfc_menu_flex {
 	gap: 1rem;
 	margin: 0.5rem 1rem auto; /* Will change with media query */
 	padding-bottom: 3rem;
@@ -129,6 +129,17 @@
 	gap: 1rem;
 }
 
+.wcfc_menu_img {
+width: 30vw;
+	margin: 1rem;
+}
+
+.accordion-body, .wcfc_menu_chowder_flex {
+	display: flex;
+	flex-direction: row;
+	gap: 4rem;
+}
+
 .wcfc_menu_accord_flex {
 	flex-direction: column;
 	gap: 1rem;
@@ -139,6 +150,10 @@
 	flex-direction: column;
 	gap: 1rem;
 }
+
+}
+
+@media (max-width: 834px) {
 
 .wcfc_menu_img {
 	width: 60vw;
