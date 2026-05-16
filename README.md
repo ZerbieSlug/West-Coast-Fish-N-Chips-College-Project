@@ -1,34 +1,27 @@
-# West Coast Fish & Chips Final Project
-DISCLAIMER: This is NOT a real website for any real world restauraunt. This is for a college final assignment!
-------
-[Restaurant]:
+# West Coast Fish N' Chips (Final Project)
+[5/15/2026]
 
-West Coast Fish & Chips
+This website is made for a restauraunt. Because the location does not have a domain of its own, it's given me the opportunity to design a site in a way that best replicates the feel and tone of the restauraunt.
 
-[Restauraunt Description]:
+## What is West Coast Fish N' Chips?
+This seafood establishment is situated in Fresno California, offering its classic "Fish N' Chips" alongside other fried seafood specialties. West Coast Fish N' Chips actually operates 2 locations within the same city, one in Fresno St, the other in Clovis. The Fresno location, which the website is designed for, has an aged and weathered down look. The clovis location, on the other hand, has a more modern appearance and branding.
 
-It's a "london style" Fish and Chips restauraunt in Fresno California
+## Check out the live page:
+https://zerbieslug.github.io/West-Coast-Fish-N-Chips-College-Project/
 
-[Website Description]:
+## Technologies used
+This website relies on .html, .css, and javascript to function. Bootstrap was used to help with laying out the site, as well as including special interactive elements. ChatGPT was used for a .js script used in the menu page, this is the only instance of AI being used for the whole site.
 
-I'm creating a website based on this restauraunt as the real location doesn't have a known (or official) website of its own. It will have a spoofed homepage, menu, contacts, and about us.
+## Features
+- Responsive Design, compatible with a majority of devices
+- Interactive "Popular Preview" carousel
+- "functional" order button
+- Collapsing Menu for Mobile Displays
+- Google Maps I-Frame
+- Contact Form
 
-[Technologies Used]:
-
-I'll be using .html, .css, JavaScript (for certain buttons), and Bootstrap (for basic setup).
-
-## Progress: HTML
-I've set up the base HTML of the website. With the help of bootstrap, I am able to roughly recreate the desired layout of each page without using CSS yet.
-
-Various edits have been made in order to comply with the current Final Assignment requirements. Although this is an unofficial and hardly functioning website, I had to make sure it looked "professional" enough. This is still a work in progress, but I'm confident that the contents of each .html are solid enough that I don't need to make further changes past this current week.
-
-## Progress: CSS (+JS)
-Although Bootstrap helped greatly in getting a rough idea of the layout I wanted, a lot of effort was still required to get the styling right. In fact, I had to make more changes to the .html in order to better control the visual elements. This often meant I had to remove some of Bootstrap's class tags from elements, as they could conflict with my settings.
-
-I initially was going to have one styles.css file, but because of how long it took to reach sections, I've decided to split up the stylesheet into separate parts. This means I can better focus on changes and additions for each specific page.
-
-Regarding Javascript, outside of Bootstrap, I've mostly used it to create fake "error" pop-ups for 2 buttons. For the menu page specifically I wanted a function where, on mobile view, parts of the menu would be collapsable. But I also want those collapsing menu parts to be forced open on desktop (with closing functionality removed). I had to consult ChatGPT on this matter, and while it's not perfect (I need to hide the arrow), it at least works as desired.
-
-Unfortunately, the website right now is not fully responsive, it's been made with desktop view in mind. There are also no proper accessibility features added yet. I'm planning on fixing those issues next week. But hopefully my attempts at future-proofing (via divs and separate stylesheets) will make the mobile conversion process easier.
-
-The pages may also need some final adjustments, I've just been focused on getting the "feel" right for now. Otherwise, I believe I've gotten the "hard parts" done!
+## Preview
+![alt text](https://github.com/ZerbieSlug/West-Coast-Fish-N-Chips-College-Project/blob/main/screenshots/FinalSS_01.png)
+![alt text](https://github.com/ZerbieSlug/West-Coast-Fish-N-Chips-College-Project/blob/main/screenshots/FinalSS_02.png)
+![alt text](https://github.com/ZerbieSlug/West-Coast-Fish-N-Chips-College-Project/blob/main/screenshots/FinalSS_03.png)
+![alt text](https://github.com/ZerbieSlug/West-Coast-Fish-N-Chips-College-Project/blob/main/screenshots/FinalSS_04.png)
