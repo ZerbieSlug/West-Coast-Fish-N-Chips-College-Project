@@ -160,4 +160,10 @@ width: 30vw;
 	margin: 0.5rem;
 }
 
+.accordion-body, .wcfc_menu_chowder_flex {
+	display: flex;
+	flex-direction: column;
+	gap: 1rem;
+}
+
 }
