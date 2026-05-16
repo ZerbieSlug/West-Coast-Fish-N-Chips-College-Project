@@ -105,8 +105,7 @@
 	color: white;
 }
 
-@media (max-width: 768px) {
-	
+@media (max-width: 834px) {
 	.wcfc_menu_flex {
 	gap: 1rem;
 	margin: 0.5rem 1rem auto; /* Will change with media query */
