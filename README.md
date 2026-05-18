@@ -1,4 +1,6 @@
 # West Coast Fish N' Chips (Final Project)
+
+DISCLAIMER: To viewers that AREN'T either my classmates or my professor, this is NOT a real website. While it is based on a real world establishment, do not rely on it for pricing or ordering. 
 [5/15/2026]
 
 This website is made for a restauraunt. Because the location does not have a domain of its own, it's given me the opportunity to design a site in a way that best replicates the feel and tone of the restauraunt.
